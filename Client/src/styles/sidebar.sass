@@ -1,0 +1,110 @@
+@import '../_variables'
+@import '../_animations'
+  
+.wrapper
+    display: flex
+    position: relative
+    z-index: 111
+    .course-menu
+        position: fixed
+        max-width: 350px
+        height: 100vh
+        background: $lighterblue
+        box-shadow: 3px 3px 17px 1px #0000006e
+        transition: all 0.5s ease-in
+        .logo
+            padding: 10px 20px 10px 10px
+        .logged-user
+            margin: 0
+            padding-bottom: 0 !important
+            font-size: 0.8em
+            text-align: right
+            padding: 10px 20px
+            letter-spacing: 2px
+        .spinner-wrap
+            width: 100%
+        button
+            cursor: pointer
+            outline: none
+            display: block
+            margin-left: auto
+            margin-right: auto
+            margin-top: 20px
+            letter-spacing: 1px
+            font-weight: 500
+            text-transform: uppercase
+            padding: 10px 20px
+            border: none
+            border-radius: 5px
+            border-left: 1px solid black
+            border-right: 1px solid black
+            background: $primary
+            color: black
+            transition: all 0.3s cubic-bezier(0.65, -0.25, 0.25, 1.95)
+            &:hover
+                letter-spacing: 2px
+        ul 
+            padding: 0 25px
+            li 
+                list-style-type: none
+                .list-elem
+                    position: relative
+                    display: block !important
+                    max-width: 100%
+                    margin: 25px 0
+                    padding: 25px 20px
+                    color: #000
+                    border: 2px solid #111
+                    font-weight: 600
+                    cursor: pointer
+                    .course-name 
+                        position: relative
+                        z-index: 2
+                    &::before
+                        content: ''
+                        position: absolute
+                        top: -2px
+                        bottom: -2px
+                        right: -2px
+                        width: calc( 100% + 2px )
+                        height: calc( 100% + 4px )
+                        background: $primary
+                        transition: 0.4s ease-in-out
+                    &:hover::before
+                        width: 0px
+                    &::after
+                        content: ''
+                        position: absolute
+                        top: 0
+                        right: -2px
+                        width: 5px
+                        height: 100%
+                        background: $primary
+                        transition: 0.2s ease-in 0.4s
+                        transform: scaleY(1)
+                    &:hover::after
+                        transform: scaleY(0)
+                .active
+                    &::before
+                        visibility: hidden
+                    &::after
+                        visibility: hidden                        
+        .burger-wrap
+            position: absolute
+            right: -50px
+            top: 0
+            z-index: 111
+            background: $lighterblue
+            padding: 20px
+            border-radius: 0 0 40px 0
+            visibility: hidden
+            .panel-icon 
+                font-size: 25px
+                visibility: hidden
+                @media screen and ( max-width: 1350px )
+                    visibility: visible
+            @media screen and ( max-width: 1350px )
+                visibility: visible
+        @media screen and ( max-width: 1350px )
+            position: absolute
+            left: -310px

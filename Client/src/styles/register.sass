@@ -1,0 +1,21 @@
+@import '../_variables'
+
+.form-signup
+    position: relative
+    width: 300px
+    transition: 0.5s
+    padding-bottom: 60px
+    @media screen and ( max-width: 350px )
+        padding: 0 30px
+    button
+        position: absolute
+        right: 0
+        padding: 6px 20px
+        background-color: #ffffff00
+        color: $green !important
+        border: 1px solid $green
+        &:hover
+            color: #ffffff !important
+            background-color: $green
+        @media screen and ( max-width: 350px )
+            right: 30px

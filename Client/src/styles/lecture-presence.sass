@@ -1,0 +1,72 @@
+@import '../_variables'
+
+.spinner-wrap
+    position: absolute
+    width: 100%
+    top: 40%
+th 
+    padding: 6px !important
+    font-size: 0.8em
+    text-align: center !important
+.text-center
+    text-align: center !important
+.presence-list-wrap
+    position: relative
+    .buttons-wrap
+        position: absolute
+        z-index: 111
+        top: -58px
+        right: 0
+        .button
+            margin: 0 5px
+            background: #ffffff00
+            color: $blue
+            border-color: $blue
+            &:hover
+                color: #fff
+                background: $blue
+    .mark-presence
+        position: relative
+        .btn-mark-presence
+            position: absolute
+            cursor: pointer
+            display: flex
+            justify-content: center
+            align-items: center
+            left: 0px
+            top: 0px
+            width: 98%
+            height: 100%
+            font-size: 18px
+            border: 2px solid #111
+            transition: 0.4s ease-in-out
+            span
+                position: relative
+                z-index: 2
+                text-transform: uppercase
+            &::before
+                content: ''
+                position: absolute
+                bottom: 8px
+                left: -2px
+                width: calc( 100% + 8px )
+                height: calc( 100% - 16px )
+                background: $primary
+                transition: 0.3s ease-in-out
+                transform: scaleY(1)
+            &:hover::before
+                transform: scaleY(0)
+            &::after
+                content: ''
+                position: absolute
+                bottom: -2px
+                left: 8px
+                width: calc( 100% - 16px )
+                height: calc( 100% + 4px )
+                background: $primary
+                transition: 0.3s ease-in-out
+                transform: scaleX(1)
+            &:hover::after
+                transform: scaleX(0)
+            &:hover
+                background: #ffffff18

@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Built-By: kabrz
+Build-Jdk: 11.0.2
+Implementation-Title: CheckIT_ebusiness
+Implementation-Version: 0.0.1-SNAPSHOT
+Implementation-Vendor-Id: com.spring.database
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-boot
+ -starter-parent/CheckIT_ebusiness
+Created-By: Maven Integration for Eclipse
+
