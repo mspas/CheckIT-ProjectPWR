@@ -7,7 +7,7 @@ Server will run on [http://localhost:8090](http://localhost:8090)
 
 ## How to run client
 
-You need to install npm (presumably with Node.js) at first. https://nodejs.org/en/
+You need to install npm (presumably with Node.js) at first. https://nodejs.org/en/ <br />
 Then in the /Client directory, you can run:
 
 ### `npm install`
