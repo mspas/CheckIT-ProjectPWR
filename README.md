@@ -5,7 +5,7 @@ In the directory where "checkIT-server.jar" file is located:
 
 Server will run on [http://localhost:8090](http://localhost:8090)
 
-## How to run client
+## How to run client application
 
 You need to install npm (presumably with Node.js) at first. https://nodejs.org/en/ <br />
 Then in the /Client directory, you can run:
