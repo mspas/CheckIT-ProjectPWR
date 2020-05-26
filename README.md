@@ -18,3 +18,7 @@ Then to run APP:
 
 Runs the app in the development mode.<br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+Login details for an example user: <br />
+Login: karol.krawczyk@pwr.wroc.pl <br />
+Password: 12345678
