@@ -18,7 +18,12 @@ Then to run APP:
 
 Runs the app in the development mode.<br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
+<br />
 Login details for an example user: <br />
 Login: karol.krawczyk@pwr.wroc.pl <br />
-Password: 12345678
+Password: 12345678<br />
+<br />
+Keep in mind that for a one account, server authorizes only one valid logged session at the time.
+That mean, if you want to test APP in two different browsers, remember to logout from the first one you tried. 
+
+
