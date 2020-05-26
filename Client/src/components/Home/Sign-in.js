@@ -25,6 +25,10 @@ class SignIn extends React.Component {
     this._auth
       .login(this.state.Email, this.state.Password)
       .then((res) => {
+        if (res.logged)
+          alert(
+            "Account already in use! Please logout from it before the next login!"
+          );
         this.props.history.replace("/dashboard");
       })
       .catch((err) => {
